@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+
+/* body {
+    height: 5555px;
+} */
+
+:root {
+    --main-font-color: #333333;
+    --secondary-color: #787878;
+    --second-color: #bd1550;
+    --bg1: #232323;
+    --bg2: #191919;
+    --footer-light-color: #b9b6b2;
+    --footer-dark-font: #b8b7b6;
+    --border-color: #e3e3e3;
+    font-family: 'Cairo', sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.top .left,
+.top .right,
+.top h2 {
+    float: left;
+}
+
+.top .left,
+.top .right {
+    width: 35%;
+    height: 10px;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    margin: 40px 25px;
+}
+
+
+/************************************************ start header **********************************************/
+
+header {
+    background-image: url(../images/bg_head.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    padding-top: 4%;
+}
+
+.header_container {
+    margin-top: 22px;
+    text-align: center;
+}
+
+header .header_container img {
+    width: 150px;
+    border: 8px solid var(--border-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/************************************************ end header **********************************************/
+
+
+/************************************************ start nav **********************************************/
+
+nav {
+    padding: 20px 0;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    height: 10  px;
+}
+
+nav ul {
+    width: 55%;
+    margin: auto;
+}
+
+nav ul li {
+    float: left;
+    margin: 0 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--main-font-color);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+
+/************************************************ end nav **********************************************/
+
+
+/************************************************ start info **********************************************/
+
+.information {
+    font-weight: 400;
+    color: var(--secondary-color);
+    font-size: 17px;
+    padding: 25px 0;
+}
+
+.information span {
+    color: var(--second-color);
+}
+
+
+/************************************************ end info **********************************************/
+
+
+/************************************************ start services **********************************************/
+
+.services .services_container .services {
+    float: left;
+    width: 25%;
+    padding: 2%;
+}
+
+.services .services_container .services h3 {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--main-font-color);
+}
+
+.services .services_container .services p {
+    color: var(--secondary-color)
+}
+
+.services .services_container .services button {
+    border: 1px solid;
+    text-align: center;
+    text-transform: uppercase;
+    background: #FFF;
+    margin-left: 15%;
+    height: 35px;
+    width: 120px;
+    font-size: .7rem;
+}
+
+.services .services_container .services button:hover {
+    background-color: #bd1550;
+}
+
+
+/************************************************ end services **********************************************/
+
+
+/************************************************ start recent **********************************************/
+
+.recent .container .recent_work .recent {
+    float: left;
+    width: calc(100%/3);
+    padding: 10px;
+}
+
+.recent .recent_work img {
+    max-width: 100%;
+}
+
+.recent .recent_work .recent h4 {
+    font-weight: 400;
+    color: var(--main-font-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.recent .recent_work .recent .caption {
+    width: 100%;
+    margin: auto;
+    color: var(--second-color);
+}
+
+.recent .recent_work .recent .caption>div {
+    float: left;
+    text-transform: capitalize;
+}
+
+.recent .recent_work .recent .caption .items:not(:last-of-type)::after {
+    content: "|";
+    margin: 0 10px;
+}
+
+
+/************************************************ end recent **********************************************/
+
+
+/************************************************ start download **********************************************/
+
+.download .sumary {
+    border: 3px double var(--secondary-color);
+    background-color: var(--border-color);
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.download .sumary p,
+.download .sumary button {
+    float: left;
+}
+
+.download .sumary p {
+    width: 65%;
+    color: var(--secondary-color);
+    margin: 10px;
+}
+
+.download .sumary p span {
+    color: var(--main-font-color);
+    font-weight: bold;
+}
+
+.download .sumary button {
+    margin: 20px;
+    width: 220px;
+    background-color: var(--second-color);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8rem;
+    border: 1px solid;
+    height: 30px;
+}
+
+
+/************************************************ end download **********************************************/
+
+.client img {
+    width: 100%;
+}
+
+
+/************************************************ start contact **********************************************/
+
+.contact {
+    background-color: var(--bg1);
+    color: var(--footer-dark-font);
+}
+
+.contact .item {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    font-size: .8rem;
+}
+
+.contact .item h4 {
+    text-transform: uppercase;
+    color: var(--footer-light-color);
+    font-weight: 400;
+}
+
+.contact .item div {
+    margin-bottom: 10px;
+}
+
+.contact .item div:nth-child(3) {
+    color: white;
+}
+
+.contact .item i {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+/************************************************ end contact **********************************************/
+
+footer {
+    background-color: black;
+    color: var(--footer-light-color);
+    height: 46px;
+    font-size: 12px;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    float: right;
+}
